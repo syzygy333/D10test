@@ -1,6 +1,3 @@
-# Remove this ignore rule for composer.lock after initial install.
-composer.lock
-
 # Project Ignore rules
 # Drupal
 /web/*.*
