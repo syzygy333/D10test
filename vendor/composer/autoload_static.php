@@ -88,7 +88,6 @@ class ComposerStaticInitd4ebf9e3237948c0fc656977e7c17fe5
         array (
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
-            'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
@@ -228,8 +227,8 @@ class ComposerStaticInitd4ebf9e3237948c0fc656977e7c17fe5
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -278,10 +277,6 @@ class ComposerStaticInitd4ebf9e3237948c0fc656977e7c17fe5
         'Drupal\\Composer\\Plugin\\Scaffold\\' => 
         array (
             0 => __DIR__ . '/..' . '/drupal/core-composer-scaffold',
-        ),
-        'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/core-project-message',
         ),
         'Drupal\\Component\\' => 
         array (

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e82361a69608d59aaafa281aa8433c7e29f86e96',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -184,15 +184,6 @@
                 0 => '10.1.4',
             ),
         ),
-        'drupal/core-project-message' => array(
-            'pretty_version' => '10.1.4',
-            'version' => '10.1.4.0',
-            'reference' => '59b4475f01debd9a0f173938a06189982c8ebffd',
-            'type' => 'composer-plugin',
-            'install_path' => __DIR__ . '/../drupal/core-project-message',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'drupal/core-proxy-builder' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -245,9 +236,9 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e82361a69608d59aaafa281aa8433c7e29f86e96',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

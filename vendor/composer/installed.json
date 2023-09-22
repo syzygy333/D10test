@@ -713,45 +713,6 @@
             "install-path": "../drupal/core-composer-scaffold"
         },
         {
-            "name": "drupal/core-project-message",
-            "version": "10.1.4",
-            "version_normalized": "10.1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "59b4475f01debd9a0f173938a06189982c8ebffd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-project-message/zipball/59b4475f01debd9a0f173938a06189982c8ebffd",
-                "reference": "59b4475f01debd9a0f173938a06189982c8ebffd",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2",
-                "php": ">=7.3.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Drupal\\Composer\\Plugin\\ProjectMessage\\MessagePlugin"
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Adds a message after Composer installation.",
-            "homepage": "https://www.drupal.org/project/drupal",
-            "keywords": [
-                "drupal"
-            ],
-            "install-path": "../drupal/core-project-message"
-        },
-        {
             "name": "drupal/core-recommended",
             "version": "10.1.4",
             "version_normalized": "10.1.4.0",
