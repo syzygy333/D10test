@@ -275,7 +275,7 @@ $settings['hash_salt'] = '';
  * custom code that changes the container, changing this identifier will also
  * allow the container to be invalidated as soon as code is deployed.
  */
-# $settings['deployment_identifier'] = \Drupal::VERSION;
+$settings['deployment_identifier'] = \Drupal::VERSION;
 
 /**
  * Access control for update.php script.
@@ -764,8 +764,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * @see \Drupal\Core\Extension\ExtensionDiscovery::scanDirectory()
  */
 $settings['file_scan_ignore_directories'] = [
-  'node_modules',
-  'bower_components',
+  'node_modules'
 ];
 
 /**
@@ -846,6 +845,18 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 // Automatically generated include for settings managed by ddev.
 if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
   include __DIR__ . '/settings.ddev.php';
+
+  // Files directory paths.
+  $settings['file_public_path'] = 'sites/default/files';
+  $settings['file_private_path'] = 'sites/default/files/private';
+  $settings['config_sync_directory'] = '../config/common';
+  $settings['file_temp_path'] = $settings['file_private_path'] . '/tmp';
+
+  // Add default config split settings for local development.
+  $config['config_split.config_split.local']['status'] = TRUE;
+  $config['config_split.config_split.dev']['status'] = FALSE;
+  $config['config_split.config_split.uat']['status'] = FALSE;
+  $config['config_split.config_split.prod']['status'] = FALSE;
 }
 
 /**

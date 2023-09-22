@@ -6,11 +6,6 @@
     "comments": {
         "_config_split_comment": "enabling also enables `config_filter`"
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "config": {
         "sort-packages": true
     }

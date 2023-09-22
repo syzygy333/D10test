@@ -11,11 +11,6 @@
         "_gin_toolbar_comment": "enabling also enables `toolbar`, `breakpoint`",
         "_bigmenu_comment": "enabling also enables `menu_ui`, `menu_link_content`, `link`"
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "config": {
         "sort-packages": true
     }
