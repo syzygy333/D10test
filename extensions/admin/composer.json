@@ -1,0 +1,16 @@
+{
+    "require": {
+        "drupal/admin_toolbar": "3.4",
+        "drupal/gin": "^3.0@RC",
+        "drupal/gin_login": "^2.0",
+        "drupal/gin_toolbar": "^1.0@RC"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
