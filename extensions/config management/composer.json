@@ -1,0 +1,17 @@
+{
+    "require": {
+        "drupal/config_ignore": "^2.4",
+        "drupal/config_split": "^1.9"
+    },
+    "comments": {
+        "_config_split_comment": "enabling also enables `config_filter`"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
