@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae734c113d97e97a91c3dbe16059850c",
+    "content-hash": "ad557c5cd6aaa8fe5b42404421bcacd2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -863,6 +863,46 @@
                 "source": "https://github.com/consolidation/site-process/tree/5.2.0"
             },
             "time": "2022-12-06T17:57:16+00:00"
+        },
+        {
+            "name": "davidrjonas/composer-lock-diff",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidrjonas/composer-lock-diff.git",
+                "reference": "3c39a39849e6d235e588c6ae273d97c8785e9008"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidrjonas/composer-lock-diff/zipball/3c39a39849e6d235e588c6ae273d97c8785e9008",
+                "reference": "3c39a39849e6d235e588c6ae273d97c8785e9008",
+                "shasum": ""
+            },
+            "bin": [
+                "composer-lock-diff"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Jonas",
+                    "homepage": "https://github.com/davidrjonas"
+                }
+            ],
+            "description": "See what has changed after a composer update.",
+            "support": {
+                "issues": "https://github.com/davidrjonas/composer-lock-diff/issues",
+                "source": "https://github.com/davidrjonas/composer-lock-diff/tree/1.7.0"
+            },
+            "time": "2022-03-11T17:43:07+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -3761,6 +3801,49 @@
             "time": "2023-08-12T08:29:29+00:00"
         },
         {
+            "name": "metadrop/drupal-updater",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Metadrop/drupal-updater.git",
+                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Metadrop/drupal-updater/zipball/2b307d80c53cf7c26579b15c8b4d6264451bbe44",
+                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44",
+                "shasum": ""
+            },
+            "require": {
+                "davidrjonas/composer-lock-diff": "^1.7",
+                "drush/drush": "^10 || ^11 || ^12",
+                "symfony/console": "^4 || ^5 || ^6",
+                "symfony/process": "^4 || ^5 || ^6"
+            },
+            "bin": [
+                "drupal-updater"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrupalUpdater\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Omar",
+                    "email": "omar.lopesino@metadrop.net"
+                }
+            ],
+            "description": "Update drupal project dependencies",
+            "support": {
+                "issues": "https://github.com/Metadrop/drupal-updater/issues",
+                "source": "https://github.com/Metadrop/drupal-updater/tree/1.8.0"
+            },
+            "time": "2023-07-10T13:05:39+00:00"
+        },
+        {
             "name": "module-monster/admin",
             "version": "dev-main",
             "dist": {
@@ -3826,7 +3909,7 @@
             "dist": {
                 "type": "path",
                 "url": "module-monster/views",
-                "reference": "2b427b9873e97c983f9ce5f485afbf2a0c7058ef"
+                "reference": "58c5ddb8904a6c1609408b71a136d3a59778cb60"
             },
             "require": {
                 "drupal/better_exposed_filters": "^6.0"
@@ -7580,6 +7663,7 @@
     "stability-flags": {
         "module-monster/admin": 20,
         "module-monster/config": 20,
+        "module-monster/media": 20,
         "module-monster/views": 20
     },
     "prefer-stable": true,

@@ -9,10 +9,14 @@
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drush/drush": "^12.2",
+        "metadrop/drupal-updater": "^1.8",
         "module-monster/admin": "dev-main",
         "module-monster/config": "dev-main",
         "module-monster/media": "dev-main",
         "module-monster/views": "dev-main"
+    },
+    "comments": {
+        "_metadrop/drupal-updater_comment": "installing also installs davidrjonas/composer-lock-diff"
     },
     "extra": {
         "patches": {},
@@ -83,5 +87,8 @@
         },
         "optimize-autoloader": true,
         "sort-packages": true
+    },
+    "scripts": {
+        "drupal-updater": "./vendor/bin/drupal-updater"
     }
 }
