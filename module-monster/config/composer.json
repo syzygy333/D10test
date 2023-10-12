@@ -1,4 +1,5 @@
 {
+    "name": "module-monster/config",
     "require": {
         "drupal/config_ignore": "^2.4",
         "drupal/config_split": "^1.9"

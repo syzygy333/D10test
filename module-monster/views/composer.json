@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/views",
+    "require": {
+        "drupal/better_exposed_filters": "^6.0"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

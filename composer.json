@@ -1,72 +1,36 @@
 {
-    "name": "drupal/recommended-project",
+    "name": "oomph/module-monster",
     "description": "Project template for Drupal projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    ],
     "require": {
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drush/drush": "^12.2",
-        "metadrop/drupal-updater": "^1.8",
-        "wikimedia/composer-merge-plugin": "^2.1"
-    },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "drupal/core-composer-scaffold": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "wikimedia/composer-merge-plugin": true
-        },
-        "sort-packages": true
+        "module-monster/admin": "dev-main",
+        "module-monster/config": "dev-main",
+        "module-monster/media": "dev-main",
+        "module-monster/views": "dev-main"
     },
     "extra": {
+        "patches": {},
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             }
         },
         "installer-paths": {
-            "web/core": [
-                "type:drupal-core"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "web/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "web/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "web/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "drush/Commands/contrib/{$name}": [
-                "type:drupal-drush"
-            ],
-            "web/modules/custom/{$name}": [
-                "type:drupal-custom-module"
-            ],
-            "web/profiles/custom/{$name}": [
-                "type:drupal-custom-profile"
-            ],
-            "web/themes/custom/{$name}": [
-                "type:drupal-custom-theme"
-            ]
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "merge-plugin": {
             "include": [
@@ -77,10 +41,47 @@
             "replace": false,
             "ignore-duplicates": false,
             "merge-dev": true,
-            "merge-extra": false,
+            "merge-extra": true,
             "merge-extra-deep": false,
             "merge-replace": true,
             "merge-scripts": false
         }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "path",
+            "url": "module-monster/admin"
+        },
+        {
+            "type": "path",
+            "url": "module-monster/config"
+        },
+        {
+            "type": "path",
+            "url": "module-monster/media"
+        },
+        {
+            "type": "path",
+            "url": "module-monster/views"
+        }
+    ],
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }

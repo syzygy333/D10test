@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/other",
+    "require": {
+
+    },
+    "comments": {
+        "_general": "above packages don't fit into pre-established groups"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

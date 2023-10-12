@@ -1,4 +1,5 @@
 {
+    "name": "module-monster/admin",
     "require": {
         "drupal/admin_toolbar": "3.4",
         "drupal/bigmenu": "^2.0@RC",
