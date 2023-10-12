@@ -4,7 +4,7 @@
         "drupal/better_exposed_filters": "^6.0"
     },
     "comments": {
-
+        "_better_exposed_filters_comment": "enabling also enables views, jquery_ui, jquery_ui_slider, jquery_ui_touch_punch, jquery_ui_datepicker"
     },
     "config": {
         "sort-packages": true
