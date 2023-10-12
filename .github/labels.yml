@@ -1,0 +1,40 @@
+labels:
+  - name: a11y
+    description: "Accessibility improvements/remediation"
+    color: "#005A9C"
+  - name: Approved
+    description: "Proof that the PR has been reviewed and is up to standards"
+    color: "#0E8A16"
+  - name: Devops
+    description: ""
+    color: "#111111"
+  - name: Documentation
+    description: ""
+    color: "#0075ca"
+  - name: JS
+    description: "Vanilla scripts"
+    color: "#F7DF1E"
+  - name: JSON
+    description: "Typically Composer updates"
+    color: "#FAF0E6"
+  - name: PHP
+    description: ""
+    color: "#8892BF"
+  - name: PostCSS
+    description: "Styles"
+    color: "#DD3A0A"
+  - name: React
+    description: "Native or Gatsby or otherwise"
+    color: "#087EA4"
+  - name: Twig
+    description: "Drupal-flavored HTML"
+    color: "#BACF29"
+  - name: Updates
+    description: "Core/module/dependency updates that are not specifically security-related"
+    color: "#111111"
+  - name: WIP
+    description: "Work in progress"
+    color: "#FFA500"
+  - name: YAML
+    description: "Typically Drupal configuration files"
+    color: "#AC4142"
