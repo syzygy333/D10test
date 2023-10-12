@@ -1,0 +1,24 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - octocat
+  categories:
+    - title: Added ➕
+    - title: Fixed 🛠
+    - title: Changed ✍️
+    - title: Deprecated 🫥
+    - title: Removed ➖
+    - title: Security 🔐
+    - title: Breaking Changes 💔
+      labels:
+        - Semver-Major
+        - breaking-change
+    - title: New Features 🎉
+      labels:
+        - Semver-Minor
+        - enhancement
+    - title: Other Changes
+      labels:
+        - "*"
