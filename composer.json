@@ -89,6 +89,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "drupal-updater": "./vendor/bin/drupal-updater"
+        "easy-update": "./vendor/bin/drupal-updater"
     }
 }

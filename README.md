@@ -17,4 +17,4 @@ Resources
     https://getcomposer.org/doc/05-repositories.md#path
 
   other
-    https://github.com/Metadrop/drupal-updater (`ddev exec ./vendor/bin/drupal-updater`)
+    https://github.com/Metadrop/drupal-updater (`ddev composer run easy-update`)
