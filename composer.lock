@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f591377ab92663746b2d3c75add3b13c",
+    "content-hash": "888beaf0e918c694197a430102e374fe",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -863,6 +863,46 @@
                 "source": "https://github.com/consolidation/site-process/tree/5.2.0"
             },
             "time": "2022-12-06T17:57:16+00:00"
+        },
+        {
+            "name": "davidrjonas/composer-lock-diff",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidrjonas/composer-lock-diff.git",
+                "reference": "3c39a39849e6d235e588c6ae273d97c8785e9008"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidrjonas/composer-lock-diff/zipball/3c39a39849e6d235e588c6ae273d97c8785e9008",
+                "reference": "3c39a39849e6d235e588c6ae273d97c8785e9008",
+                "shasum": ""
+            },
+            "bin": [
+                "composer-lock-diff"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Jonas",
+                    "homepage": "https://github.com/davidrjonas"
+                }
+            ],
+            "description": "See what has changed after a composer update.",
+            "support": {
+                "issues": "https://github.com/davidrjonas/composer-lock-diff/issues",
+                "source": "https://github.com/davidrjonas/composer-lock-diff/tree/1.7.0"
+            },
+            "time": "2022-03-11T17:43:07+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2673,16 +2713,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.2.0",
+            "version": "12.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "b924aa6cfad1c0eb3ae853ccc373422c16184b8e"
+                "reference": "a83c9ae56728dd6f99aa5d150c11e5e3656030a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/b924aa6cfad1c0eb3ae853ccc373422c16184b8e",
-                "reference": "b924aa6cfad1c0eb3ae853ccc373422c16184b8e",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/a83c9ae56728dd6f99aa5d150c11e5e3656030a5",
+                "reference": "a83c9ae56728dd6f99aa5d150c11e5e3656030a5",
                 "shasum": ""
             },
             "require": {
@@ -2805,7 +2845,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.2.0"
+                "source": "https://github.com/drush-ops/drush/tree/12.3.0"
             },
             "funding": [
                 {
@@ -2813,7 +2853,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-08T12:42:05+00:00"
+            "time": "2023-10-11T11:25:44+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3514,6 +3554,49 @@
             "time": "2023-08-12T08:29:29+00:00"
         },
         {
+            "name": "metadrop/drupal-updater",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Metadrop/drupal-updater.git",
+                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Metadrop/drupal-updater/zipball/2b307d80c53cf7c26579b15c8b4d6264451bbe44",
+                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44",
+                "shasum": ""
+            },
+            "require": {
+                "davidrjonas/composer-lock-diff": "^1.7",
+                "drush/drush": "^10 || ^11 || ^12",
+                "symfony/console": "^4 || ^5 || ^6",
+                "symfony/process": "^4 || ^5 || ^6"
+            },
+            "bin": [
+                "drupal-updater"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrupalUpdater\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Omar",
+                    "email": "omar.lopesino@metadrop.net"
+                }
+            ],
+            "description": "Update drupal project dependencies",
+            "support": {
+                "issues": "https://github.com/Metadrop/drupal-updater/issues",
+                "source": "https://github.com/Metadrop/drupal-updater/tree/1.8.0"
+            },
+            "time": "2023-07-10T13:05:39+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.17.1",
             "source": {
@@ -4117,16 +4200,16 @@
         },
         {
             "name": "psr/http-client",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31"
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/0955afe48220520692d2d09f7ab7e0f93ffd6a31",
-                "reference": "0955afe48220520692d2d09f7ab7e0f93ffd6a31",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
                 "shasum": ""
             },
             "require": {
@@ -4163,9 +4246,9 @@
                 "psr-18"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-client/tree/1.0.2"
+                "source": "https://github.com/php-fig/http-client"
             },
-            "time": "2023-04-10T20:12:12+00:00"
+            "time": "2023-09-23T14:17:50+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -4607,16 +4690,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v6.3.4",
+            "version": "v6.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "68a5a9570806a087982f383f6109c5e925892a49"
+                "reference": "2ed62b3bf98346e1f45529a7b6be2196739bb993"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/68a5a9570806a087982f383f6109c5e925892a49",
-                "reference": "68a5a9570806a087982f383f6109c5e925892a49",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2ed62b3bf98346e1f45529a7b6be2196739bb993",
+                "reference": "2ed62b3bf98346e1f45529a7b6be2196739bb993",
                 "shasum": ""
             },
             "require": {
@@ -4668,7 +4751,7 @@
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v6.3.4"
+                "source": "https://github.com/symfony/dependency-injection/tree/v6.3.5"
             },
             "funding": [
                 {
@@ -4684,7 +4767,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-16T17:55:17+00:00"
+            "time": "2023-09-25T16:46:40+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -5048,16 +5131,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v6.3.3",
+            "version": "v6.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "9915db259f67d21eefee768c1abcf1cc61b1fc9e"
+                "reference": "a1b31d88c0e998168ca7792f222cbecee47428c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/9915db259f67d21eefee768c1abcf1cc61b1fc9e",
-                "reference": "9915db259f67d21eefee768c1abcf1cc61b1fc9e",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a1b31d88c0e998168ca7792f222cbecee47428c4",
+                "reference": "a1b31d88c0e998168ca7792f222cbecee47428c4",
                 "shasum": ""
             },
             "require": {
@@ -5092,7 +5175,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v6.3.3"
+                "source": "https://github.com/symfony/finder/tree/v6.3.5"
             },
             "funding": [
                 {
@@ -5108,7 +5191,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-31T08:31:44+00:00"
+            "time": "2023-09-26T12:56:25+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -6609,16 +6692,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.3.2",
+            "version": "v6.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "53d1a83225002635bca3482fcbf963001313fb68"
+                "reference": "13d76d0fb049051ed12a04bef4f9de8715bea339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/53d1a83225002635bca3482fcbf963001313fb68",
-                "reference": "53d1a83225002635bca3482fcbf963001313fb68",
+                "url": "https://api.github.com/repos/symfony/string/zipball/13d76d0fb049051ed12a04bef4f9de8715bea339",
+                "reference": "13d76d0fb049051ed12a04bef4f9de8715bea339",
                 "shasum": ""
             },
             "require": {
@@ -6675,7 +6758,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.3.2"
+                "source": "https://github.com/symfony/string/tree/v6.3.5"
             },
             "funding": [
                 {
@@ -6691,7 +6774,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-05T08:41:27+00:00"
+            "time": "2023-09-18T10:38:32+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -6869,16 +6952,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.3.4",
+            "version": "v6.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "2027be14f8ae8eae999ceadebcda5b4909b81d45"
+                "reference": "3d9999376be5fea8de47752837a3e1d1c5f69ef5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2027be14f8ae8eae999ceadebcda5b4909b81d45",
-                "reference": "2027be14f8ae8eae999ceadebcda5b4909b81d45",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3d9999376be5fea8de47752837a3e1d1c5f69ef5",
+                "reference": "3d9999376be5fea8de47752837a3e1d1c5f69ef5",
                 "shasum": ""
             },
             "require": {
@@ -6933,7 +7016,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.3.4"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.3.5"
             },
             "funding": [
                 {
@@ -6949,7 +7032,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-24T14:51:05+00:00"
+            "time": "2023-09-12T10:11:35+00:00"
         },
         {
             "name": "symfony/var-exporter",
