@@ -3802,16 +3802,16 @@
         },
         {
             "name": "metadrop/drupal-updater",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Metadrop/drupal-updater.git",
-                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44"
+                "reference": "4951d06b2e03a44ffeef6763799dcffbc8bab909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Metadrop/drupal-updater/zipball/2b307d80c53cf7c26579b15c8b4d6264451bbe44",
-                "reference": "2b307d80c53cf7c26579b15c8b4d6264451bbe44",
+                "url": "https://api.github.com/repos/Metadrop/drupal-updater/zipball/4951d06b2e03a44ffeef6763799dcffbc8bab909",
+                "reference": "4951d06b2e03a44ffeef6763799dcffbc8bab909",
                 "shasum": ""
             },
             "require": {
@@ -3839,9 +3839,9 @@
             "description": "Update drupal project dependencies",
             "support": {
                 "issues": "https://github.com/Metadrop/drupal-updater/issues",
-                "source": "https://github.com/Metadrop/drupal-updater/tree/1.8.0"
+                "source": "https://github.com/Metadrop/drupal-updater/tree/1.9.0"
             },
-            "time": "2023-07-10T13:05:39+00:00"
+            "time": "2023-10-20T09:01:02+00:00"
         },
         {
             "name": "module-monster/admin",
