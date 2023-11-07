@@ -11,6 +11,7 @@
 !/web/sites/default
 /web/sites/default/*
 !/web/sites/default/settings.php
+!web/robots.txt
 
 /config/**/.htaccess
 
@@ -32,6 +33,7 @@
 /tests/**/results
 .phpunit.result.cache
 
-# DDEV
+# Local development
 /.ddev/*
 !/.ddev/config.yaml
+/.gitattributes
