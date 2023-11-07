@@ -1,0 +1,13 @@
+{
+    "name": "module-monster/search",
+    "require": {
+        "drupal/search_api": "^1.29",
+        "drupal/search_api_algolia": "^3.0@beta"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

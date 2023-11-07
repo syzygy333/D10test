@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/mail",
+    "require": {
+        "drupal/phpmailer_smtp": "^2.2"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

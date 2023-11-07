@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/decoupled",
+    "require": {
+        "contentful/contentful": "^7.0"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

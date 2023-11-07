@@ -1,0 +1,13 @@
+{
+    "name": "module-monster/migration",
+    "require": {
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_tools": "^6.0"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

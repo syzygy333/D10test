@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/wysiwyg",
+    "require": {
+        "drupal/linkit": "^6.1"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

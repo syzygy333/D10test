@@ -1,0 +1,13 @@
+{
+    "name": "module-monster/menu",
+    "require": {
+        "drupal/bigmenu": "^2.0@RC",
+        "drupal/menu_fast_edit": "^1.0@dev"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

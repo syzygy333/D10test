@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/roles",
+    "require": {
+
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

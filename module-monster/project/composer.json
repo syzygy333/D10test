@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/project",
+    "require": {
+
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

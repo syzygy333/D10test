@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/workflow",
+    "require": {
+        "drupal/workflow": "^1.7"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
