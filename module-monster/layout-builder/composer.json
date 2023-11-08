@@ -1,7 +1,7 @@
 {
-    "name": "module-monster/workflow",
+    "name": "module-monster/layout-builder",
     "require": {
-        "drupal/workflow": "^1.7"
+
     },
     "comments": {
 
