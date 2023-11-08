@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32e4744f87c6dd5fabc614700fb49dd5",
+    "content-hash": "1d101cc7a5b3e2106fb72da6534c507d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1262,6 +1262,136 @@
             }
         },
         {
+            "name": "drupal/automatic_updates",
+            "version": "3.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/automatic_updates.git",
+                "reference": "3.0.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/automatic_updates-3.0.0-alpha6.zip",
+                "reference": "3.0.0-alpha6",
+                "shasum": "8b158b1cb4b40f54c01744ba69bf39e1eb1b3fae"
+            },
+            "require": {
+                "composer-runtime-api": "^2.1",
+                "drupal/core": "^10",
+                "ext-json": "*",
+                "php-tuf/composer-stager": "^2",
+                "symfony/console": "^6.2"
+            },
+            "require-dev": {
+                "colinodell/psr-testlogger": "^1.2",
+                "symfony/config": "^6.2"
+            },
+            "bin": [
+                "auto-update"
+            ],
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-alpha6",
+                    "datestamp": "1697206831",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\automatic_updates\\Development\\": "scripts/src"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "phpcbf": [
+                    "scripts/phpcbf.sh"
+                ],
+                "phpcs": [
+                    "scripts/phpcs.sh"
+                ],
+                "test": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "scripts/phpunit.sh"
+                ],
+                "core-convert": [
+                    "Drupal\\automatic_updates\\Development\\Converter::doConvert"
+                ],
+                "core-commit": [
+                    "Drupal\\automatic_updates\\Development\\Converter::makeCommit"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Strauss",
+                    "homepage": "https://www.drupal.org/user/93254"
+                },
+                {
+                    "name": "drumm",
+                    "homepage": "https://www.drupal.org/user/3064"
+                },
+                {
+                    "name": "dstol",
+                    "homepage": "https://www.drupal.org/user/329570"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "hestenet",
+                    "homepage": "https://www.drupal.org/user/54034"
+                },
+                {
+                    "name": "mbaynton",
+                    "homepage": "https://www.drupal.org/user/2303520"
+                },
+                {
+                    "name": "Mixologic",
+                    "homepage": "https://www.drupal.org/user/391689"
+                },
+                {
+                    "name": "mlhess",
+                    "homepage": "https://www.drupal.org/user/102818"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "pwolanin",
+                    "homepage": "https://www.drupal.org/user/49851"
+                },
+                {
+                    "name": "tedbow",
+                    "homepage": "https://www.drupal.org/user/240860"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "xjm",
+                    "homepage": "https://www.drupal.org/user/65776"
+                }
+            ],
+            "description": "Drupal Automatic Updates",
+            "homepage": "https://www.drupal.org/project/automatic_updates",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/automatic_updates",
+                "issues": "https://www.drupal.org/project/issues/automatic_updates"
+            }
+        },
+        {
             "name": "drupal/better_exposed_filters",
             "version": "6.0.3",
             "source": {
@@ -2094,6 +2224,50 @@
             }
         },
         {
+            "name": "drupal/decorative_image_widget",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/decorative_image_widget.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/decorative_image_widget-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "1bcd473add81bc96296a98796880cb2f6a0ccb47"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1696726436",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bkosborne",
+                    "homepage": "https://www.drupal.org/user/788032"
+                }
+            ],
+            "description": "Modifies image widgets to require alt text OR be marked as decorative.",
+            "homepage": "https://www.drupal.org/project/decorative_image_widget",
+            "support": {
+                "source": "https://git.drupalcode.org/project/decorative_image_widget"
+            }
+        },
+        {
             "name": "drupal/dropzonejs",
             "version": "2.8.0",
             "source": {
@@ -2187,6 +2361,58 @@
             }
         },
         {
+            "name": "drupal/dubbot",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dubbot.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dubbot-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "ed877c61a785c62a3e2bc2b7eedd22141e18f9a6"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1685691402",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "davidburns",
+                    "homepage": "https://www.drupal.org/user/72958"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                },
+                {
+                    "name": "sylturner",
+                    "homepage": "https://www.drupal.org/user/3753133"
+                }
+            ],
+            "description": "DubBot provides automated tests for website accessibility, broken links, spelling, and customizable web governance rules.",
+            "homepage": "https://www.drupal.org/project/dubbot",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dubbot"
+            }
+        },
+        {
             "name": "drupal/easy_responsive_images",
             "version": "1.3.2",
             "source": {
@@ -2228,6 +2454,55 @@
             "homepage": "https://www.drupal.org/project/easy_responsive_images",
             "support": {
                 "source": "https://git.drupalcode.org/project/easy_responsive_images"
+            }
+        },
+        {
+            "name": "drupal/entity_save_and_addanother",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_save_and_addanother.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_save_and_addanother-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "9c4a88e3577f77f0c40fdad35ba07a02ce0f44b5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1654448675",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                }
+            ],
+            "description": "Create a button on entity form that allows to create a entity content and continue to create another entity content of that type.",
+            "homepage": "https://www.drupal.org/project/entity_save_and_addanother",
+            "keywords": [
+                "Drupal",
+                "Entity Save And Add Another"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_save_and_addanother",
+                "issues": "https://www.drupal.org/project/issues/entity_save_and_addanother"
             }
         },
         {
@@ -3364,6 +3639,123 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/project_browser",
+            "version": "1.0.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/project_browser.git",
+                "reference": "1.0.0-beta5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/project_browser-1.0.0-beta5.zip",
+                "reference": "1.0.0-beta5",
+                "shasum": "7c27e46d45a5c5087c7f619d691e28f44c2c2334"
+            },
+            "require": {
+                "composer/semver": "^3.2",
+                "drupal/core": "^10",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^6 || ^7",
+                "php": ">=8.1"
+            },
+            "conflict": {
+                "drupal/automatic_updates": "<3.0"
+            },
+            "require-dev": {
+                "colinodell/psr-testlogger": "^1.2",
+                "drupal/automatic_updates": "3.0.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta5",
+                    "datestamp": "1693847826",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "cs": [
+                    "phpcs -n --standard=PSR2 src --exclude=Generic.Files.LineLength"
+                ],
+                "cbf": [
+                    "phpcbf -n --standard=PSR2 src --exclude=Generic.Files.LineLength"
+                ],
+                "unit": [
+                    "phpunit"
+                ],
+                "lint": [
+                    "find src -name '*.php' -print0 | xargs -0 -n1 php -l"
+                ],
+                "test": [
+                    "@lint",
+                    "@cs"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "chrisfromredfin",
+                    "homepage": "https://www.drupal.org/user/74392"
+                },
+                {
+                    "name": "dmitrig01",
+                    "homepage": "https://www.drupal.org/user/47566"
+                },
+                {
+                    "name": "fjgarlin",
+                    "homepage": "https://www.drupal.org/user/2495842"
+                },
+                {
+                    "name": "grasmash",
+                    "homepage": "https://www.drupal.org/user/455714"
+                },
+                {
+                    "name": "jacob@redfinsolutions.com",
+                    "homepage": "https://www.drupal.org/user/3574855"
+                },
+                {
+                    "name": "leslieg",
+                    "homepage": "https://www.drupal.org/user/1746792"
+                },
+                {
+                    "name": "narendraR",
+                    "homepage": "https://www.drupal.org/user/1730192"
+                },
+                {
+                    "name": "rlnorthcutt",
+                    "homepage": "https://www.drupal.org/user/116893"
+                },
+                {
+                    "name": "srishtiiee",
+                    "homepage": "https://www.drupal.org/user/3685162"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "A project browser embedded in the Drupal UI.",
+            "homepage": "https://www.drupal.org/project/project_browser",
+            "support": {
+                "source": "https://git.drupalcode.org/project/project_browser"
             }
         },
         {
@@ -4814,17 +5206,35 @@
             "time": "2023-10-20T09:01:02+00:00"
         },
         {
+            "name": "module-monster/a11y",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "module-monster/a11y",
+                "reference": "5a55bcf887454609e4b69b3e6567ca6b89dad64e"
+            },
+            "require": {
+                "drupal/decorative_image_widget": "^1.0"
+            },
+            "type": "library",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "module-monster/admin",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "module-monster/admin",
-                "reference": "5a7625de81c16ba89c3a91f8b71639e242bb3c55"
+                "reference": "39a5d3be0057de964c4655106dd729530b25fa83"
             },
             "require": {
                 "drupal/admin_toolbar": "^3.4",
+                "drupal/automatic_updates": "^3.0@alpha",
                 "drupal/bigmenu": "^2.0@RC",
                 "drupal/coffee": "^1.3",
+                "drupal/entity_save_and_addanother": "^1.0",
                 "drupal/field_group": "^3.4",
                 "drupal/gin": "^3.0@RC",
                 "drupal/gin_login": "^2.0",
@@ -5330,6 +5740,87 @@
                 "source": "https://github.com/phootwork/lang/tree/v3.2.2"
             },
             "time": "2023-05-26T05:37:59+00:00"
+        },
+        {
+            "name": "php-tuf/composer-stager",
+            "version": "v2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-tuf/composer-stager.git",
+                "reference": "9dd34d00626cf85eefc14aabb3ec73e02745d27a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-tuf/composer-stager/zipball/9dd34d00626cf85eefc14aabb3ec73e02745d27a",
+                "reference": "9dd34d00626cf85eefc14aabb3ec73e02745d27a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.1.0",
+                "symfony/filesystem": "^6.2",
+                "symfony/process": "^6.2",
+                "symfony/translation-contracts": "^3.2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "ergebnis/composer-normalize": "^2.33",
+                "jangregor/phpstan-prophecy": "^1.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3",
+                "phpbench/phpbench": "^1.2",
+                "phpmd/phpmd": "^2.13",
+                "phpro/grumphp-shim": "^2.0",
+                "phpspec/prophecy": "^1.17",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.5",
+                "phpunit/phpunit": "^9.6",
+                "psalm/phar": "^5.13",
+                "rector/rector": "^0.17.5 || ^0.18.0",
+                "slevomat/coding-standard": "^8.13",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/config": "^6.3",
+                "symfony/dependency-injection": "^6.3",
+                "symfony/yaml": "^6.3",
+                "thecodingmachine/phpstan-strict-rules": "^1.0"
+            },
+            "suggest": {
+                "symfony/translation": "For internationalization tools"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.x-dev"
+                },
+                "grumphp": {
+                    "disable-plugin": true
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpTuf\\ComposerStager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Travis Carden",
+                    "email": "travis.carden@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Stages Composer commands so they can be safely run on a production codebase.",
+            "homepage": "https://github.com/php-tuf/composer-stager",
+            "support": {
+                "issues": "https://github.com/php-tuf/composer-stager/issues",
+                "source": "https://github.com/php-tuf/composer-stager"
+            },
+            "time": "2023-08-30T14:37:37+00:00"
         },
         {
             "name": "phpowermove/docblock",
@@ -8675,6 +9166,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "module-monster/a11y": 20,
         "module-monster/admin": 20,
         "module-monster/config": 20,
         "module-monster/media": 20,

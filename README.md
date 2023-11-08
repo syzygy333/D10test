@@ -9,7 +9,7 @@ Said another way, instead of bootstrapping your project with a "skeleton" Compos
 The main composer.json in the root of the project operates mostly as you are used to. The major difference is that it contains only the bare minimum of modules (`core-recommended` etc) and configuration (`installer-paths` etc) needed for the site to function. Customization beyond that is relegated to the "child" Composer files located in the `/module-monster/*` directories. These are broadly separated into categories like "admin" or "media," but they can be whatever you like, as long as you reference them correctly.
 
 ### Adding dependencies to an existing Composer file
-To add a new dependency, manually edit the appropriate `module-monster/foo/composer.json` and save the file (this is not normally recommended, but is necessary in this case). Then run `ddev composer update` from the project root. The new item will be installed and the main `composer.lock` will be updated.
+To add a new dependency, manually edit the appropriate `module-monster/foo/composer.json` and save the file (this is not normally recommended, but is necessary in this case). Then run `ddev composer update --lock` from the project root. The new item will be installed and the main `composer.lock` will be updated.
 
 ### Adding a new `composer.json` and subdirectory
 To add a new directory to Module Monster, simply create the directory (`module-monster/bar`) and add a new `composer.json` containing the following:
@@ -62,11 +62,13 @@ The [Drupal Updater](https://github.com/Metadrop/drupal-updater) helper is inclu
 
 ## References
 ### Recipes
-    [Drupal recipes initiative](https://www.drupal.org/project/distributions_recipes)
-    [Drupal Slack recipes channel](https://drupal.slack.com/archives/C2THUBAVA)
-    [Drupal recipe unpack](https://gitlab.ewdev.ca/yonas.legesse/drupal-recipe-unpack)
+[Drupal recipes initiative](https://www.drupal.org/project/distributions_recipes)
+[Drupal Slack recipes channel](https://drupal.slack.com/archives/C2THUBAVA)
+[Drupal recipe unpack](https://gitlab.ewdev.ca/yonas.legesse/drupal-recipe-unpack)
+
 ### Composer
-    [Composer best practices and note about composer-merge-plugin deprecation](https://drupalize.me/tutorial/composer-configuration-drupal)
-    [Using a "path" type repository](https://getcomposer.org/doc/05-repositories.md#path)
+[Composer best practices and note about composer-merge-plugin deprecation](https://drupalize.me/tutorial/composer-configuration-drupal)
+[Using a "path" type repository](https://getcomposer.org/doc/05-repositories.md#path)
+
 ### Other
-    [Drupal Updater](https://github.com/Metadrop/drupal-updater)
+[Drupal Updater](https://github.com/Metadrop/drupal-updater)

@@ -10,6 +10,7 @@
         "drupal/core-recommended": "^10.1",
         "drush/drush": "^12.2",
         "metadrop/drupal-updater": "^1.8",
+        "module-monster/a11y": "dev-main",
         "module-monster/admin": "dev-main",
         "module-monster/config": "dev-main",
         "module-monster/media": "dev-main",
@@ -42,6 +43,7 @@
     "repositories": [
         {"type": "composer", "url": "https://packages.drupal.org/8"},
         {"type": "path", "url": "module-monster/admin"},
+        {"type": "path", "url": "module-monster/a11y"},
         {"type": "path", "url": "module-monster/config"},
         {"type": "path", "url": "module-monster/media"},
         {"type": "path", "url": "module-monster/menu"},

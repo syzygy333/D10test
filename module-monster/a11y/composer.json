@@ -1,0 +1,12 @@
+{
+    "name": "module-monster/a11y",
+    "require": {
+        "drupal/decorative_image_widget": "^1.0"
+    },
+    "comments": {
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -19,9 +19,11 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
+  decorative_image_widget: 0
   dynamic_page_cache: 0
   easy_responsive_images: 0
   editor: 0
+  entity_save_and_addanother: 0
   field: 0
   field_group: 0
   file: 0
