@@ -13,7 +13,9 @@
         "module-monster/admin": "dev-main",
         "module-monster/config": "dev-main",
         "module-monster/media": "dev-main",
-        "module-monster/views": "dev-main"
+        "module-monster/menu": "dev-main",
+        "module-monster/views": "dev-main",
+        "module-monster/wysiwyg": "dev-main"
     },
     "comments": {
         "_metadrop/drupal-updater_comment": "installing also installs davidrjonas/composer-lock-diff"
@@ -35,43 +37,16 @@
             "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
-        },
-        "merge-plugin": {
-            "include": [
-                "composer.local.json",
-                "extensions/*/composer.json"
-            ],
-            "recurse": true,
-            "replace": false,
-            "ignore-duplicates": false,
-            "merge-dev": true,
-            "merge-extra": true,
-            "merge-extra-deep": false,
-            "merge-replace": true,
-            "merge-scripts": false
         }
     },
     "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "path",
-            "url": "module-monster/admin"
-        },
-        {
-            "type": "path",
-            "url": "module-monster/config"
-        },
-        {
-            "type": "path",
-            "url": "module-monster/media"
-        },
-        {
-            "type": "path",
-            "url": "module-monster/views"
-        }
+        {"type": "composer", "url": "https://packages.drupal.org/8"},
+        {"type": "path", "url": "module-monster/admin"},
+        {"type": "path", "url": "module-monster/config"},
+        {"type": "path", "url": "module-monster/media"},
+        {"type": "path", "url": "module-monster/menu"},
+        {"type": "path", "url": "module-monster/views"},
+        {"type": "path", "url": "module-monster/wysiwyg"}
     ],
     "conflict": {
         "drupal/drupal": "*"
@@ -89,6 +64,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "easy-update": "./vendor/bin/drupal-updater"
+        "easy-update": ["Composer\\Config::disableProcessTimeout", "./vendor/bin/drupal-updater"]
     }
 }

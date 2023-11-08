@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad557c5cd6aaa8fe5b42404421bcacd2",
+    "content-hash": "fc7210e8399861442dd9f2007c821d16",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2953,6 +2953,65 @@
             }
         },
         {
+            "name": "drupal/linkit",
+            "version": "6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/linkit.git",
+                "reference": "6.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linkit-6.1.2.zip",
+                "reference": "6.1.2",
+                "shasum": "63fb311d2b78df81a9a588330429b640ec7da0e8"
+            },
+            "require": {
+                "drupal/core": "^10.1"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "*",
+                "drupal/imce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.1.2",
+                    "datestamp": "1696865478",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Stjerneman",
+                    "homepage": "https://stjerneman.com",
+                    "email": "emil@stjerneman.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                }
+            ],
+            "description": "Linkit - Enriched linking experience",
+            "homepage": "http://drupal.org/project/linkit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkit",
+                "issues": "http://drupal.org/project/linkit"
+            }
+        },
+        {
             "name": "drupal/media_bulk_upload",
             "version": "3.0.2",
             "source": {
@@ -3114,6 +3173,62 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/media_library_edit",
                 "issues": "https://www.drupal.org/project/issues/media_library_edit"
+            }
+        },
+        {
+            "name": "drupal/menu_fast_edit",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_fast_edit.git",
+                "reference": "96bcb91713a387c2b36bde13d8e0471104fd4ab0"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.x-dev",
+                    "datestamp": "1672256111",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Wright",
+                    "homepage": "https://slalom.com",
+                    "email": "steven.wright@slalom.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Rick Hawkins",
+                    "homepage": "https://slalom.com",
+                    "email": "rick.hawkins@slalom.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Enhances the Drupal admin UI to let menu links be added and edited quickly.",
+            "homepage": "https://www.drupal.org/project/menu_fast_edit",
+            "keywords": [
+                "Drupal",
+                "configuration",
+                "configuration management",
+                "menu"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_fast_edit",
+                "issues": "https://www.drupal.org/project/issues/menu_fast_edit"
             }
         },
         {
@@ -4770,6 +4885,23 @@
             }
         },
         {
+            "name": "module-monster/menu",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "module-monster/menu",
+                "reference": "b858d3f4899f8f41ad62e05c80d3b4af69096088"
+            },
+            "require": {
+                "drupal/bigmenu": "^2.0@RC",
+                "drupal/menu_fast_edit": "^1.0@dev"
+            },
+            "type": "library",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "module-monster/views",
             "version": "dev-main",
             "dist": {
@@ -4779,6 +4911,22 @@
             },
             "require": {
                 "drupal/better_exposed_filters": "^6.0"
+            },
+            "type": "library",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "module-monster/wysiwyg",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "module-monster/wysiwyg",
+                "reference": "7c880c65ce02e73faf79b441a28f9dc1b3b9e512"
+            },
+            "require": {
+                "drupal/linkit": "^6.1"
             },
             "type": "library",
             "transport-options": {
@@ -8530,6 +8678,7 @@
         "module-monster/admin": 20,
         "module-monster/config": 20,
         "module-monster/media": 20,
+        "module-monster/menu": 20,
         "module-monster/views": 20
     },
     "prefer-stable": true,

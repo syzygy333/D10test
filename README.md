@@ -27,22 +27,20 @@ To add a new directory to Module Monster, simply create the directory (`module-m
     }
 }
 ```
-Then, require the new file in the main `composer.json` using the existing requirements as a guide:
+Next, add it to the `"repositories"` list:
 ```
 {
     ...
-    "require": {
-        ...
-        "module-monster/admin": "dev-main",
-        "module-monster/config": "dev-main",
-        "module-monster/media": "dev-main",
-        "module-monster/views": "dev-main",
-        "module-monster/bar": "dev-main",
-    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "module-monster/bar"
+        }
+    ]
     ...
 }
 ```
-Then simply follow the [directions above to add and install new dependencies](#adding-dependencies-to-an-existing-composer-file).
+Then, require it as normal: `ddev composer require 'module-monster/bar`.
 
 ### Commenting
 Commenting in each `composer.json` is possible by simply adding a `"comments"` key with key/value pairs as the identifiers/comments, like so:
