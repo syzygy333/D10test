@@ -1,0 +1,10 @@
+uuid: e472e1e1-7685-4b2d-9f3f-125ecf46f69b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_bulk_upload
+id: media_bulk_config.token
+label: Token
+targetEntityType: media_bulk_config
+cache: true
