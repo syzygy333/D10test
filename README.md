@@ -43,7 +43,7 @@ Next, add it to the `"repositories"` list:
 Then, require it as normal: `ddev composer require 'module-monster/bar`.
 
 ### Patching
-Patches for all modules are kept in the `composer.patches.json` file. Manually add them to the list, then apply them as normal by running `ddev composer install`.
+Patches for all modules are kept in the `composer.patches.json` file. Manually add them to the list, then apply them as normal by running `ddev composer install`. If you run into an issue specifically related to patches, running `ddev composer patches-doctor` will generate a report that might help with troubleshooting.
 
 ### Commenting
 Commenting in each `composer.json` is possible by simply adding a `"comments"` key with key/value pairs as the identifiers/comments, like so:
@@ -74,4 +74,5 @@ The [Drupal Updater](https://github.com/Metadrop/drupal-updater) helper is inclu
 [Using a "path" type repository](https://getcomposer.org/doc/05-repositories.md#path)
 
 ### Other
+[Composer Patches Documentation](https://docs.cweagans.net/composer-patches/)
 [Drupal Updater](https://github.com/Metadrop/drupal-updater)
