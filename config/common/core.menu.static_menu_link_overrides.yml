@@ -26,55 +26,55 @@ definitions:
     expanded: false
     enabled: true
   system__admin_config_system:
-    weight: -49
-    menu_name: admin
-    parent: system.admin_config
-    enabled: true
-    expanded: false
-  system__admin_config_content:
     weight: -47
     menu_name: admin
     parent: system.admin_config
     expanded: false
     enabled: true
-  system__admin_config_ui:
-    weight: -48
-    menu_name: admin
-    parent: system.admin_config
-    expanded: false
-    enabled: true
-  system__admin_config_development:
-    weight: -50
-    menu_name: admin
-    parent: system.admin_config
-    expanded: false
-    enabled: true
-  system__admin_config_media:
-    weight: -46
-    menu_name: admin
-    parent: system.admin_config
-    expanded: false
-    enabled: true
-  system__admin_config_search:
+  system__admin_config_content:
     weight: -45
     menu_name: admin
     parent: system.admin_config
     expanded: false
     enabled: true
-  system__admin_config_regional:
+  system__admin_config_ui:
+    weight: -46
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_development:
+    weight: -48
+    menu_name: admin
+    parent: system.admin_config
+    enabled: true
+    expanded: false
+  system__admin_config_media:
     weight: -44
     menu_name: admin
     parent: system.admin_config
     expanded: false
     enabled: true
-  system__admin_config_services:
+  system__admin_config_search:
     weight: -43
     menu_name: admin
     parent: system.admin_config
     expanded: false
     enabled: true
-  system__admin_config_workflow:
+  system__admin_config_regional:
     weight: -42
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_services:
+    weight: -41
+    menu_name: admin
+    parent: system.admin_config
+    expanded: false
+    enabled: true
+  system__admin_config_workflow:
+    weight: -40
     menu_name: admin
     parent: system.admin_config
     expanded: false
@@ -83,5 +83,35 @@ definitions:
     menu_name: admin
     parent: system.modules_list
     weight: -50
+    expanded: false
+    enabled: true
+  entity__config_split__collection:
+    weight: -47
+    parent: config.sync
+    menu_name: admin
+    expanded: false
+    enabled: true
+  config__sync:
+    weight: -50
+    parent: system.admin_config
+    menu_name: admin
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:config__import':
+    weight: -50
+    menu_name: admin
+    parent: config.sync
+    enabled: true
+    expanded: false
+  'admin_toolbar_tools__extra_links:config__export':
+    weight: -49
+    menu_name: admin
+    parent: config.sync
+    expanded: false
+    enabled: true
+  config_ignore__settings:
+    weight: -48
+    menu_name: admin
+    parent: config.sync
     expanded: false
     enabled: true
