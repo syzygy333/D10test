@@ -1,0 +1,131 @@
+uuid: 5314b263-7aaf-4b7d-9843-70e5189578e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - coffee
+    - config
+    - config_split
+    - contextual
+    - crop
+    - field_ui
+    - file
+    - filter
+    - image
+    - imageapi_optimize
+    - linkit
+    - media
+    - media_bulk_upload
+    - media_file_delete
+    - node
+    - path
+    - pathauto
+    - publication_date
+    - rabbit_hole
+    - redirect
+    - redirect_404
+    - responsive_favicons
+    - responsive_image
+    - seckit
+    - system
+    - taxonomy
+    - toolbar
+    - update
+    - view_unpublished
+    - views_ui
+id: admin
+label: Admin
+weight: 2
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access coffee'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer blocks'
+  - 'administer coffee'
+  - 'administer configuration split'
+  - 'administer content types'
+  - 'administer crop'
+  - 'administer crop types'
+  - 'administer display modes'
+  - 'administer filters'
+  - 'administer image styles'
+  - 'administer imageapi optimize pipelines'
+  - 'administer linkit profiles'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media file delete'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer media_bulk_upload configuration'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer publication date'
+  - 'administer rabbit_hole settings'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer responsive favicons'
+  - 'administer responsive images'
+  - 'administer seckit'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'change own username'
+  - 'create media'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any file'
+  - 'delete any media'
+  - 'delete media'
+  - 'delete own files'
+  - 'export configuration'
+  - 'ignore 404 requests'
+  - 'import configuration'
+  - 'link to any page'
+  - 'notify of path changes'
+  - 'revert all revisions'
+  - 'select account cancellation method'
+  - 'set any published on date'
+  - 'synchronize configuration'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view any unpublished dorks content'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'
+  - 'view update notifications'
+  - 'view user email addresses'
