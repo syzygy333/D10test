@@ -1,0 +1,7 @@
+{
+    "patches": {
+        "drupal/gin": {
+            "3394085: Fatal error when enabling new experimental sidebar navigation": "https://www.drupal.org/files/issues/2023-10-17/3394085-09.patch"
+        }
+    }
+}

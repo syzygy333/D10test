@@ -6,6 +6,7 @@
     "homepage": "https://www.drupal.org/project/drupal",
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drush/drush": "^12.2",
@@ -22,7 +23,7 @@
         "_metadrop/drupal-updater_comment": "installing also installs davidrjonas/composer-lock-diff"
     },
     "extra": {
-        "patches": {},
+        "patches-file": "composer.patches.json",
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -60,7 +61,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "optimize-autoloader": true,
         "sort-packages": true
