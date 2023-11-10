@@ -288,7 +288,7 @@ $settings['deployment_identifier'] = \Drupal::VERSION;
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = false;
 
 /**
  * Fallback to HTTP for Update Manager and for fetching security advisories.
@@ -784,7 +784,7 @@ $settings['entity_update_batch_size'] = 50;
  * well as the original entity type and field storage definitions should be
  * retained after a successful entity update process.
  */
-$settings['entity_update_backup'] = TRUE;
+$settings['entity_update_backup'] = true;
 
 /**
  * Node migration type.
@@ -797,7 +797,7 @@ $settings['entity_update_backup'] = TRUE;
  * complete node migrations. Set this to TRUE to force the use of the classic
  * node migrations.
  */
-$settings['migrate_node_migrate_type_classic'] = FALSE;
+$settings['migrate_node_migrate_type_classic'] = false;
 
 /**
  * The default settings for migration sources.
@@ -853,10 +853,10 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
   $settings['file_temp_path'] = $settings['file_private_path'] . '/tmp';
 
   // Add default config split settings for local development.
-  $config['config_split.config_split.local']['status'] = TRUE;
-  $config['config_split.config_split.dev']['status'] = FALSE;
-  $config['config_split.config_split.uat']['status'] = FALSE;
-  $config['config_split.config_split.prod']['status'] = FALSE;
+  $config['config_split.config_split.local']['status'] = true;
+  $config['config_split.config_split.dev']['status'] = false;
+  $config['config_split.config_split.uat']['status'] = false;
+  $config['config_split.config_split.prod']['status'] = false;
 }
 
 /**
@@ -873,6 +873,6 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}

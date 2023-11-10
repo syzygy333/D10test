@@ -1,13 +1,13 @@
 {
     "name": "oomph/module-monster",
-    "description": "Project template for Drupal projects with a relocated document root",
+    "description": "Oomph's starting point for Drupal 10 projects",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
     "require": {
         "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^10.1",
-        "drupal/core-recommended": "^10.1",
+        "drupal/core-composer-scaffold": "^10.2",
+        "drupal/core-recommended": "^10.2",
         "drush/drush": "^12.2",
         "metadrop/drupal-updater": "^1.8",
         "module-monster/a11y": "dev-main",
