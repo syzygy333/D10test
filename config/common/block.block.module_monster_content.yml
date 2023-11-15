@@ -1,15 +1,15 @@
-uuid: 72391d65-2ea6-4692-a4cb-8a73c210aa42
+uuid: 96726edb-164e-4857-92f0-23635d67e22d
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - module_monster
 _core:
-  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: olivero_content
-theme: olivero
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: module_monster_content
+theme: module_monster
 region: content
 weight: 0
 provider: null

@@ -1,15 +1,15 @@
-uuid: 92ee570e-0b32-45f7-8096-9dedc9937787
+uuid: 2b0b1193-0835-4dbc-befd-08972b7eb041
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - module_monster
 _core:
-  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: olivero_primary_admin_actions
-theme: olivero
-region: highlighted
-weight: -5
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: module_monster_local_actions
+theme: module_monster
+region: content
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

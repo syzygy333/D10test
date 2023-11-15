@@ -1,14 +1,14 @@
-uuid: 14ffedb6-86b7-4a2e-be51-66e6821fe6b9
+uuid: f34d19d6-4056-44f7-ae41-1efeb080e201
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
+    - module_monster
 _core:
-  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
-id: stark_page_title
-theme: stark
-region: content
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: module_monster_page_title
+theme: module_monster
+region: header
 weight: -30
 provider: null
 plugin: page_title_block
