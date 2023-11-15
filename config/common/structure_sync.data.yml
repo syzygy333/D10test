@@ -1,0 +1,49 @@
+menus:
+  -
+    menu_name: admin
+    title: Watchdog
+    parent: system.admin_reports
+    uri: 'internal:/admin/reports/dblog'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -50
+    langcode: en
+    uuid: f163f9d8-abb9-4f1d-8519-0e0f5cf93174
+  -
+    menu_name: admin
+    title: 'Add Form Mode'
+    parent: entity.entity_form_mode.collection
+    uri: 'internal:/admin/structure/display-modes/form/add'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 850f47ca-7e97-4f88-ae27-54942a3aa1e0
+  -
+    menu_name: admin
+    title: 'Add View Mode'
+    parent: entity.entity_view_mode.collection
+    uri: 'internal:/admin/structure/display-modes/view/add'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 122ab5cb-0b94-4543-aeef-7ba0962be194
+  -
+    menu_name: admin
+    title: 'Config sync'
+    parent: system.admin_config
+    uri: 'internal:/admin/config/development/configuration'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 2b0b13d4-783a-46bd-8669-bf68ee6faeb4

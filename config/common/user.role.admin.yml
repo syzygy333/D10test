@@ -37,7 +37,7 @@ dependencies:
 id: admin
 label: Admin
 weight: 2
-is_admin: null
+is_admin: true
 permissions:
   - 'access administration pages'
   - 'access coffee'
@@ -122,7 +122,6 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any unpublished content'
-  - 'view any unpublished dorks content'
   - 'view media'
   - 'view own unpublished content'
   - 'view own unpublished media'

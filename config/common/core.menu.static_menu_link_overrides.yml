@@ -2,116 +2,566 @@ _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
 definitions:
   block__admin_display:
-    weight: -49
+    weight: -47
     menu_name: admin
     parent: system.admin_structure
-    enabled: true
     expanded: false
+    enabled: true
   entity__node_type__collection:
-    weight: -50
+    weight: -51
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   entity__menu__collection:
-    weight: -48
+    weight: -46
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   user__admin_index:
+    weight: -50
     menu_name: admin
     parent: entity.user.collection
-    weight: -20
     expanded: false
     enabled: true
   system__admin_config_system:
-    weight: -47
     menu_name: admin
     parent: system.admin_config
+    weight: -47
     expanded: false
     enabled: true
   system__admin_config_content:
-    weight: -45
     menu_name: admin
     parent: system.admin_config
+    weight: -45
     expanded: false
     enabled: true
   system__admin_config_ui:
-    weight: -46
     menu_name: admin
     parent: system.admin_config
+    weight: -46
     expanded: false
     enabled: true
   system__admin_config_development:
+    menu_name: admin
+    parent: system.admin_config
     weight: -48
-    menu_name: admin
-    parent: system.admin_config
-    enabled: true
     expanded: false
+    enabled: true
   system__admin_config_media:
-    weight: -44
     menu_name: admin
     parent: system.admin_config
+    weight: -44
     expanded: false
     enabled: true
   system__admin_config_search:
-    weight: -43
     menu_name: admin
     parent: system.admin_config
+    weight: -43
     expanded: false
     enabled: true
   system__admin_config_regional:
-    weight: -42
     menu_name: admin
     parent: system.admin_config
+    weight: -42
     expanded: false
     enabled: true
   system__admin_config_services:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_config
     weight: -41
-    menu_name: admin
-    parent: system.admin_config
     expanded: false
-    enabled: true
   system__admin_config_workflow:
-    weight: -40
+    enabled: false
     menu_name: admin
     parent: system.admin_config
+    weight: -40
     expanded: false
-    enabled: true
   update__status:
+    weight: -51
     menu_name: admin
     parent: system.modules_list
-    weight: -50
     expanded: false
     enabled: true
   entity__config_split__collection:
-    weight: -47
-    parent: config.sync
+    weight: -48
+    parent: 'menu_link_content:2b0b13d4-783a-46bd-8669-bf68ee6faeb4'
     menu_name: admin
     expanded: false
     enabled: true
   config__sync:
     weight: -50
+    menu_name: admin
     parent: system.admin_config
-    menu_name: admin
     expanded: false
-    enabled: true
+    enabled: false
   'admin_toolbar_tools__extra_links:config__import':
+    parent: 'menu_link_content:2b0b13d4-783a-46bd-8669-bf68ee6faeb4'
+    menu_name: admin
     weight: -50
-    menu_name: admin
-    parent: config.sync
-    enabled: true
     expanded: false
+    enabled: true
   'admin_toolbar_tools__extra_links:config__export':
-    weight: -49
+    parent: 'menu_link_content:2b0b13d4-783a-46bd-8669-bf68ee6faeb4'
     menu_name: admin
-    parent: config.sync
+    weight: -49
     expanded: false
     enabled: true
   config_ignore__settings:
-    weight: -48
     menu_name: admin
     parent: config.sync
+    weight: -48
     expanded: false
     enabled: true
+  dblog__overview:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    weight: -1
+  entity__field_storage_config__collection:
+    weight: -44
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  views_ui__reports_plugins:
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  system__admin_index:
+    enabled: false
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    weight: -100
+  field_ui__display_mode:
+    weight: -45
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__media_type__collection:
+    weight: -50
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__collection:
+    weight: -48
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__view__collection:
+    weight: -49
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:update__theme_install':
+    weight: -50
+    menu_name: admin
+    parent: system.themes_page
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:system__theme_settings':
+    weight: -51
+    menu_name: admin
+    parent: system.themes_page
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:update__theme_update':
+    weight: -49
+    menu_name: admin
+    parent: system.themes_page
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:update__module_install':
+    weight: -50
+    menu_name: admin
+    parent: system.modules_list
+    expanded: false
+    enabled: true
+  system__modules_uninstall:
+    weight: -48
+    menu_name: admin
+    parent: system.modules_list
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:update__module_update':
+    weight: -49
+    menu_name: admin
+    parent: system.modules_list
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:user__admin_create':
+    menu_name: admin
+    parent: entity.user.collection
+    weight: -51
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:user__admin_permissions':
+    weight: -48
+    menu_name: admin
+    parent: entity.user.collection
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__user_role__collection':
+    weight: -49
+    menu_name: admin
+    parent: entity.user.collection
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:views_ui__archive':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:views_ui__content':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__block_content':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__files':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__frontpage':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__glossary':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__media':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__media_library':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__user_admin_people':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__content_recent':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__redirect_404':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__redirect':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__taxonomy_term':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__watchdog':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__who_s_new':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:views_ui__who_s_online':
+    enabled: false
+    menu_name: admin
+    parent: entity.view.collection
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__menu__edit_form__tools':
+    enabled: false
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__menu__edit_form__account':
+    enabled: false
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 4
+    expanded: false
+  entity__block_content_type__collection:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:node__type_add':
+    enabled: true
+    menu_name: admin
+    parent: entity.node_type.collection
+    expanded: false
+    weight: -2
+  'admin_toolbar_tools__extra_links:media__type_add':
+    enabled: true
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: -2
+    expanded: false
+  'admin_toolbar_tools__extra_links:node__add':
+    enabled: true
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    weight: -50
+  'admin_toolbar_tools__extra_links:view__files':
+    weight: -47
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:media_page':
+    weight: -45
+    menu_name: admin
+    parent: system.admin_content
+    enabled: true
+    expanded: false
+  'admin_toolbar_tools__extra_links:add_media':
+    menu_name: admin
+    parent: system.admin_content
+    weight: -48
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:media_library':
+    weight: -46
+    parent: system.admin_content
+    menu_name: admin
+    expanded: false
+    enabled: true
+  entity__media_bulk__collection:
+    weight: -50
+    parent: 'admin_toolbar_tools.extra_links:add_media'
+    menu_name: admin
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:views_ui__add':
+    menu_name: admin
+    parent: entity.view.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__taxonomy_vocabulary__add_form':
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: -998
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:block_content__add_page':
+    menu_name: admin
+    parent: block.admin_display
+    weight: 0
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__menu__add_form':
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: -2
+    expanded: false
+    enabled: true
+  system__admin_content:
+    menu_name: admin
+    parent: system.admin
+    weight: -10
+    expanded: false
+    enabled: true
+  system__performance_settings:
+    weight: -49
+    menu_name: admin
+    parent: system.admin_config_development
+    expanded: false
+    enabled: true
+  system__development_settings:
+    weight: -50
+    menu_name: admin
+    parent: system.admin_config_development
+    expanded: false
+    enabled: true
+  system__logging_settings:
+    weight: -48
+    menu_name: admin
+    parent: system.admin_config_development
+    expanded: false
+    enabled: true
+  system__site_maintenance_mode:
+    weight: -47
+    menu_name: admin
+    parent: system.admin_config_development
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__claro':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__olivero':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__stark':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    weight: 0
+    expanded: false
+  gin_login__configuration_form:
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings_theme.gin'
+    weight: 99
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__settings:
+    weight: -50
+    menu_name: admin
+    parent: system.admin_config_ui
+    enabled: true
+    expanded: false
+  admin_toolbar__settings:
+    weight: -49
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    enabled: true
+  bigmenu__settings:
+    weight: -48
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    enabled: true
+  coffee__configuration:
+    weight: -47
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    enabled: true
+  responsive_favicons__config:
+    weight: -45
+    menu_name: admin
+    parent: system.admin_config_ui
+    expanded: false
+    enabled: true
+  fontawesome__admin_settings:
+    weight: -46
+    parent: system.admin_config_ui
+    menu_name: admin
+    expanded: false
+    enabled: true
+  crop__overview_types:
+    weight: -46
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  system__file_system_settings:
+    weight: -45
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  entity__imageapi_optimize_pipeline__collection:
+    weight: -42
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  entity__image_style__collection:
+    weight: -50
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  entity__media_bulk_config__collection:
+    weight: -44
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  media_file_delete__settings:
+    weight: -43
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  media_library__settings:
+    weight: -48
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  media__settings:
+    weight: -49
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  entity__responsive_image_style__collection:
+    weight: -47
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  system__image_toolkit_settings:
+    weight: -41
+    menu_name: admin
+    parent: system.admin_config_media
+    expanded: false
+    enabled: true
+  system__rss_feeds_settings:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_config_services
+    weight: 0
+    expanded: false
+  system__linkset_settings:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_config_services
+    weight: 10
+    expanded: false
