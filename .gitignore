@@ -6,6 +6,7 @@
 /web/modules/contrib
 /web/themes/contrib
 /web/profiles/contrib
+/web/*/README.txt
 
 /web/sites/*
 !/web/sites/default
