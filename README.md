@@ -43,7 +43,7 @@ Next, add it to the `"repositories"` list:
 Then, require it as normal: `ddev composer require 'module-monster/bar`.
 
 ### Patching
-Patches for all modules are kept in the `composer.patches.json` file. Manually add them to the list, then apply them as normal by running `ddev composer install`. If you run into an issue specifically related to patches, running `ddev composer patches-doctor` will generate a report that might help with troubleshooting.
+Patches for all modules are kept in the `composer.patches.json` file. Manually add them to the list, then apply them as normal by running `ddev composer install`. If patches do not apply with the previous command, run `ddev composer prl && ddev composer prp` (`patches-relock` and `patches-repatch`). If you run into an issue specifically related to patches, running `ddev composer patches-doctor` will generate a report that might help with troubleshooting.
 
 ### Commenting
 Commenting in each `composer.json` is possible by simply adding a `"comments"` key with key/value pairs as the identifiers/comments, like so:

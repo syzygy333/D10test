@@ -1,0 +1,22 @@
+uuid: f5637678-3916-480f-b08a-bbd5c223a438
+langcode: en
+status: true
+dependencies: {  }
+name: responsive_1600w
+label: responsive_1600w
+effects:
+  b4379518-9b44-4469-bf2a-c11e733f1b3d:
+    uuid: b4379518-9b44-4469-bf2a-c11e733f1b3d
+    id: image_scale
+    weight: -10
+    data:
+      width: 1600
+      height: null
+      upscale: true
+  f9058980-e04c-4a06-aa56-7e4d48938dbe:
+    uuid: f9058980-e04c-4a06-aa56-7e4d48938dbe
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

@@ -1,0 +1,22 @@
+uuid: d2d29784-62cb-40ac-b5f4-aa943463f05a
+langcode: en
+status: true
+dependencies: {  }
+name: responsive_1000w
+label: responsive_1000w
+effects:
+  67c3d6df-c0ba-4705-9680-6c4b063fc702:
+    uuid: 67c3d6df-c0ba-4705-9680-6c4b063fc702
+    id: image_scale
+    weight: -10
+    data:
+      width: 1000
+      height: null
+      upscale: true
+  f52816b4-063b-4e25-ac09-f452f62674da:
+    uuid: f52816b4-063b-4e25-ac09-f452f62674da
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

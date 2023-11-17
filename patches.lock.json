@@ -1,4 +1,35 @@
 {
-    "_hash": "6142bfcb78f54dfbf5247ae5e463f25bdb8fff1890806e2e45aa81a59c211653",
-    "patches": []
+    "_hash": "b039a9b64e0d85d19cc0b5ef8343f317b7f865b4bac4601a6466b82951eb2f48",
+    "patches": {
+        "drupal/gin": [
+            {
+                "package": "drupal/gin",
+                "description": "3394085: Fatal error when enabling new experimental sidebar navigation",
+                "url": "https://www.drupal.org/files/issues/2023-10-17/3394085-09.patch",
+                "sha256": "ff7f0d47b0dbd0ff84dca19199bbb76890f1436155e220df81b3615245ab2756",
+                "depth": 1,
+                "extra": []
+            }
+        ],
+        "drupal/imageapi_optimize_gd": [
+            {
+                "package": "drupal/imageapi_optimize_gd",
+                "description": "3353327: Fix the issues reported by phpcs",
+                "url": "https://www.drupal.org/files/issues/2023-04-12/3353327-4.patch",
+                "sha256": "c1375041e4a10d80466b106867bbef9abd21e4b7762a4ea7f006656e04c61d3d",
+                "depth": 1,
+                "extra": []
+            }
+        ],
+        "drupal/publication_date": [
+            {
+                "package": "drupal/publication_date",
+                "description": "3328575: Fix PHP 8.2 deprecation issue with PublishedAtOrNowComputed class",
+                "url": "https://www.drupal.org/files/issues/2023-05-31/3328575-5-fix-bux-publicate-date.patch",
+                "sha256": "ec8dd5acb1fd6152a3dd0844ac092863fa2482bb79501710ebecdcb633cde55f",
+                "depth": 1,
+                "extra": []
+            }
+        ]
+    }
 }

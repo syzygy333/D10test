@@ -1,0 +1,8 @@
+uuid: cb6ac747-eb0f-4500-9455-008ca370db28
+langcode: en
+status: true
+dependencies: {  }
+id: long_with_time
+label: 'Long date/time'
+locked: false
+pattern: 'l, F j, Y - H:i'

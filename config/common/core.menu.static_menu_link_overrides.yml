@@ -2,19 +2,19 @@ _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
 definitions:
   block__admin_display:
-    weight: -47
+    weight: -46
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   entity__node_type__collection:
-    weight: -51
+    weight: -50
     menu_name: admin
     parent: system.admin_structure
-    expanded: false
     enabled: true
+    expanded: false
   entity__menu__collection:
-    weight: -46
+    weight: -45
     menu_name: admin
     parent: system.admin_structure
     expanded: false
@@ -122,11 +122,11 @@ definitions:
     expanded: false
     weight: -1
   entity__field_storage_config__collection:
-    weight: -44
+    weight: -41
+    enabled: false
     menu_name: admin
     parent: system.admin_structure
     expanded: false
-    enabled: true
   views_ui__reports_plugins:
     enabled: false
     menu_name: admin
@@ -140,25 +140,25 @@ definitions:
     expanded: false
     weight: -100
   field_ui__display_mode:
-    weight: -45
+    weight: -44
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   entity__media_type__collection:
-    weight: -50
+    weight: -49
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   entity__taxonomy_vocabulary__collection:
-    weight: -48
+    weight: -47
     menu_name: admin
     parent: system.admin_structure
     expanded: false
     enabled: true
   entity__view__collection:
-    weight: -49
+    weight: -48
     menu_name: admin
     parent: system.admin_structure
     expanded: false
@@ -314,23 +314,23 @@ definitions:
     weight: 0
     expanded: false
   'admin_toolbar_tools__extra_links:entity__menu__edit_form__tools':
-    enabled: false
+    weight: -45
     menu_name: admin
     parent: entity.menu.collection
-    weight: 3
     expanded: false
+    enabled: false
   'admin_toolbar_tools__extra_links:entity__menu__edit_form__account':
-    enabled: false
+    weight: -44
     menu_name: admin
     parent: entity.menu.collection
-    weight: 4
     expanded: false
-  entity__block_content_type__collection:
     enabled: false
+  entity__block_content_type__collection:
+    weight: -40
     menu_name: admin
     parent: system.admin_structure
     expanded: false
-    weight: 0
+    enabled: false
   'admin_toolbar_tools__extra_links:node__type_add':
     enabled: true
     menu_name: admin
@@ -356,20 +356,20 @@ definitions:
     expanded: false
     enabled: true
   'admin_toolbar_tools__extra_links:media_page':
-    weight: -45
-    menu_name: admin
-    parent: system.admin_content
-    enabled: true
-    expanded: false
-  'admin_toolbar_tools__extra_links:add_media':
-    menu_name: admin
-    parent: system.admin_content
     weight: -48
+    menu_name: admin
+    parent: system.admin_content
     expanded: false
     enabled: true
-  'admin_toolbar_tools__extra_links:media_library':
-    weight: -46
+  'admin_toolbar_tools__extra_links:add_media':
+    weight: -49
+    menu_name: admin
     parent: system.admin_content
+    enabled: true
+    expanded: false
+  'admin_toolbar_tools__extra_links:media_library':
+    weight: -50
+    parent: 'admin_toolbar_tools.extra_links:media_page'
     menu_name: admin
     expanded: false
     enabled: true
@@ -392,17 +392,17 @@ definitions:
     expanded: false
     enabled: true
   'admin_toolbar_tools__extra_links:block_content__add_page':
+    weight: -50
     menu_name: admin
     parent: block.admin_display
-    weight: 0
-    expanded: false
     enabled: true
+    expanded: false
   'admin_toolbar_tools__extra_links:entity__menu__add_form':
+    weight: -50
     menu_name: admin
     parent: entity.menu.collection
-    weight: -2
-    expanded: false
     enabled: true
+    expanded: false
   system__admin_content:
     menu_name: admin
     parent: system.admin
@@ -565,3 +565,45 @@ definitions:
     parent: system.admin_config_services
     weight: 10
     expanded: false
+  structure_sync:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    weight: -39
+  'admin_toolbar_tools__extra_links:views_ui__field_list':
+    weight: -50
+    parent: 'menu_link_content:a6b379d4-d8f3-4983-96e3-895f1b9d8070'
+    menu_name: admin
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__menu__edit_form__admin':
+    weight: -48
+    menu_name: admin
+    parent: entity.menu.collection
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__menu__edit_form__footer':
+    weight: -47
+    menu_name: admin
+    parent: entity.menu.collection
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__menu__edit_form__main':
+    weight: -46
+    menu_name: admin
+    parent: entity.menu.collection
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__block_content_type__collection':
+    weight: -48
+    menu_name: admin
+    parent: block.admin_display
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__block_content__collection':
+    weight: -47
+    menu_name: admin
+    parent: block.admin_display
+    expanded: false
+    enabled: true

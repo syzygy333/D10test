@@ -1,0 +1,22 @@
+uuid: f08ba9d5-470f-40a2-a258-180a7749358a
+langcode: en
+status: true
+dependencies: {  }
+name: responsive_800w
+label: responsive_800w
+effects:
+  a12fc1a0-fdda-4b4d-a95b-3b909ced7d5e:
+    uuid: a12fc1a0-fdda-4b4d-a95b-3b909ced7d5e
+    id: image_scale
+    weight: -10
+    data:
+      width: 800
+      height: null
+      upscale: true
+  7abc351d-45e4-41ad-92ea-94cde93d47cf:
+    uuid: 7abc351d-45e4-41ad-92ea-94cde93d47cf
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

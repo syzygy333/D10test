@@ -1,0 +1,24 @@
+uuid: 271ee832-beab-4fbc-8629-04e4a419ac8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: responsive_21_9_400w
+label: responsive_21_9_400w
+effects:
+  8c5ee60a-9c1d-4623-a784-437d89c3aaae:
+    uuid: 8c5ee60a-9c1d-4623-a784-437d89c3aaae
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 400
+      height: 171
+      crop_type: focal_point
+  db3d419e-dd9d-4ee7-9bef-3a4a42bd664d:
+    uuid: db3d419e-dd9d-4ee7-9bef-3a4a42bd664d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

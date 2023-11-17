@@ -1,0 +1,7 @@
+uuid: 72df7913-23ce-4233-b580-ce9f6e1a3096
+langcode: en
+status: true
+dependencies: {  }
+name: gd2_50
+label: 'GD2 50'
+processors: {  }

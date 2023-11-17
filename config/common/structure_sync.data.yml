@@ -47,3 +47,63 @@ menus:
     weight: -49
     langcode: en
     uuid: 2b0b13d4-783a-46bd-8669-bf68ee6faeb4
+  -
+    menu_name: admin
+    title: Tokens
+    parent: system.admin_structure
+    uri: 'internal:/admin/help/token'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -42
+    langcode: en
+    uuid: f285cb69-7aae-49d6-8a38-8e912d0adf67
+  -
+    menu_name: admin
+    title: Fields
+    parent: system.admin_structure
+    uri: 'internal:/admin/reports/fields'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -43
+    langcode: en
+    uuid: a6b379d4-d8f3-4983-96e3-895f1b9d8070
+  -
+    menu_name: admin
+    title: 'Export/Import menu content'
+    parent: entity.menu.collection
+    uri: 'internal:/admin/structure/structure-sync/menu-links'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 34d44ced-d4f4-42de-897b-79697d4cf8b6
+  -
+    menu_name: admin
+    title: 'Export/Import block content'
+    parent: block.admin_display
+    uri: 'internal:/admin/structure/structure-sync/blocks'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: -49
+    langcode: en
+    uuid: 5b7f71d6-af1a-469f-9a22-03d071589c3f
+  -
+    menu_name: admin
+    title: 'Export/Import taxonomy content'
+    parent: entity.taxonomy_vocabulary.collection
+    uri: 'internal:/admin/structure/structure-sync/taxonomies'
+    link_title: ''
+    description: null
+    enabled: true
+    expanded: false
+    weight: 0
+    langcode: en
+    uuid: 59ae77bd-aa5e-40de-a66c-749c0161f007

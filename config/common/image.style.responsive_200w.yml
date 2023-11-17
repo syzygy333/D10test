@@ -1,0 +1,22 @@
+uuid: f0ee34f3-5f8d-474d-a694-f96d029f55b9
+langcode: en
+status: true
+dependencies: {  }
+name: responsive_200w
+label: responsive_200w
+effects:
+  d6d59315-7bce-4787-82e0-6e6d37e320a1:
+    uuid: d6d59315-7bce-4787-82e0-6e6d37e320a1
+    id: image_scale
+    weight: -10
+    data:
+      width: 200
+      height: null
+      upscale: true
+  0847c06a-9198-4904-8347-2f39d2c85e6f:
+    uuid: 0847c06a-9198-4904-8347-2f39d2c85e6f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__

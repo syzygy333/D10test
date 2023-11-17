@@ -1,0 +1,8 @@
+uuid: 921897e6-cc0d-4df1-827d-1979431ad4c2
+langcode: en
+status: true
+dependencies: {  }
+id: short_alt
+label: 'Short date (alt)'
+locked: false
+pattern: 'F j, Y'

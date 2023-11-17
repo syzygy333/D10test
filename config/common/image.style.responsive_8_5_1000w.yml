@@ -1,0 +1,24 @@
+uuid: 52fab723-35fc-4d03-a1c4-b6d58b802c7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: responsive_8_5_1000w
+label: responsive_8_5_1000w
+effects:
+  f03ceb8e-5936-4be8-a4b9-25e8c55b9c51:
+    uuid: f03ceb8e-5936-4be8-a4b9-25e8c55b9c51
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 1000
+      height: 625
+      crop_type: focal_point
+  b63aedc3-2dd2-4e7b-a2b3-467aec09285c:
+    uuid: b63aedc3-2dd2-4e7b-a2b3-467aec09285c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: __default__
