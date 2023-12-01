@@ -1,0 +1,7 @@
+{
+    "patches": {
+        "drupal/imageapi_optimize_gd": {
+            "3353327: Fix the issues reported by phpcs": "https://www.drupal.org/files/issues/2023-04-12/3353327-4.patch"
+        }
+    }
+}

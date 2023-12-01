@@ -51,7 +51,19 @@
         {"type": "path", "url": "module-monster/media"},
         {"type": "path", "url": "module-monster/menu"},
         {"type": "path", "url": "module-monster/views"},
-        {"type": "path", "url": "module-monster/wysiwyg"}
+        {"type": "path", "url": "module-monster/wysiwyg"},
+        {
+            "type": "package",
+            "package": {
+                "name": "jqlang/jq",
+                "version": "1.7",
+                "dist": {
+                    "url": "https://github.com/jqlang/jq/archive/refs/tags/jq-1.7.zip",
+                    "type": "zip"
+                }
+            },
+            "comments": "used to combine multiple composer.patches.json files into one in the script below"
+        }
     ],
     "conflict": {
         "drupal/drupal": "*"
@@ -70,6 +82,9 @@
         "sort-packages": true
     },
     "scripts": {
-        "easy-update": ["Composer\\Config::disableProcessTimeout", "./vendor/bin/drupal-updater"]
+        "easy-update": ["Composer\\Config::disableProcessTimeout", "./vendor/bin/drupal-updater"],
+        "pre-install-cmd": [
+            "jq -s 'reduce .[] as $item ({}; . *= $item)' module-monster/*/composer.patches.json > composer.patches.json"
+        ]
     }
 }

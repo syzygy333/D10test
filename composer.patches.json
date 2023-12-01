@@ -1,13 +1,13 @@
 {
-    "patches": {
-        "drupal/gin": {
-            "3394085: Fatal error when enabling new experimental sidebar navigation": "https://www.drupal.org/files/issues/2023-10-17/3394085-09.patch"
-        },
-        "drupal/imageapi_optimize_gd": {
-            "3353327: Fix the issues reported by phpcs": "https://www.drupal.org/files/issues/2023-04-12/3353327-4.patch"
-        },
-        "drupal/publication_date": {
-            "3328575: Fix PHP 8.2 deprecation issue with PublishedAtOrNowComputed class": "https://www.drupal.org/files/issues/2023-05-31/3328575-5-fix-bux-publicate-date.patch"
-        }
+  "patches": {
+    "drupal/gin": {
+      "3394085: Fatal error when enabling new experimental sidebar navigation": "https://www.drupal.org/files/issues/2023-10-17/3394085-09.patch"
+    },
+    "drupal/publication_date": {
+      "3328575: Fix PHP 8.2 deprecation issue with PublishedAtOrNowComputed class": "https://www.drupal.org/files/issues/2023-05-31/3328575-5-fix-bux-publicate-date.patch"
+    },
+    "drupal/imageapi_optimize_gd": {
+      "3353327: Fix the issues reported by phpcs": "https://www.drupal.org/files/issues/2023-04-12/3353327-4.patch"
     }
+  }
 }
