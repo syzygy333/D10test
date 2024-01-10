@@ -19,7 +19,7 @@ labels:
     color: "#FAF0E6"
   - name: PHP
     description: ""
-    color: "#8892BF"
+    color: "#4F5B93"
   - name: PostCSS
     description: "Styles"
     color: "#DD3A0A"
